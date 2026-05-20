@@ -1,0 +1,164 @@
+/* ==========================================================================
+   1. VARIÁVEIS (Custom Properties)
+   Centralize suas cores e fontes aqui para mudar o tema do site num clique.
+   ========================================================================== */
+:root {
+    --primary-color: #2563eb;    /* Azul moderno */
+    --primary-hover: #1d4ed8;    /* Azul mais escuro para hover */
+    --text-color: #1e293b;       /* Grafite escuro (melhor que preto puro) */
+    --bg-color: #f8fafc;         /* Fundo levemente cinza/azul */
+    --card-bg: #ffffff;          /* Branco para contrastar com o fundo */
+    --footer-bg: #0f172a;        /* Azul escuro para o rodapé */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --transition: all 0.3s ease; /* Transição suave para efeitos */
+}
+
+/* ==========================================================================
+   2. RESET CSS MODERN
+   Remove margens padrões e corrige como o tamanho dos elementos é calculado.
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding/border não quebrem o layout */
+}
+
+html {
+    scroll-behavior: smooth; /* Rolagem suave ao clicar nos links internos */
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-shadow: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ==========================================================================
+   3. LAYOUT & COMPONENTES (Flexbox em Ação)
+   ========================================================================== */
+
+/* Cabeçalho Principal */
+.main-header {
+    background-color: var(--card-bg);
+    display: flex;
+    justify-content: space-between; /* Espaça a logo e a barra de navegação */
+    align-items: center;            /* Alinha ambos verticalmente ao centro */
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;               /* Fixa o topo ao rolar a página */
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-bar ul {
+    display: flex; /* Coloca os links um ao lado do outro */
+    gap: 1.5rem;   /* Cria um espaçamento perfeito entre os links */
+}
+
+.nav-bar a {
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-bar a:hover {
+    color: var(--primary-color);
+}
+
+/* Conteúdo Principal */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;    /* Centraliza o site em telas muito grandes */
+    padding: 2rem 1rem;
+}
+
+/* Seção de Destaque (Hero) */
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Alinha os textos e o botão de cima para baixo */
+    align-items: center;    /* Centraliza na horizontal */
+    justify-content: center;/* Centraliza na vertical */
+    text-align: center;
+    min-height: 50vh;       /* Ocupa metade da altura da tela atual */
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+/* Botão Estilizado */
+.primary-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.primary-button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px); /* Efeito sutil de levantar */
+}
+
+/* Seção de Conteúdo */
+.info-section {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+code {
+    background-color: #e2e8f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Rodapé */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}

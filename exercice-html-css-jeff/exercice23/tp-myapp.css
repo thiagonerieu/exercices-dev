@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MaPolicePerso';
+    src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    background-color: #3079C8;
+    font-size: 1em;
+    font-family: 'MaPolicePerso';
+    font-weight: bold;
+    color:#ffffff;
+}
+
+header .logo {
+    font-size: 1.6em;
+    
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: linear-gradient(#64C9F1, #328BC2);
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-family: 'MaPolicePerso';
+    color:#ffffff;    
+    padding: 10vh;
+}
+
+section p {
+    flex-wrap: wrap;
+    max-width: 50vh;
+    text-align: center;
+}
+
+.btn-interactif {
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,246,5,1) 0%, rgba(245,139,139,1) 100.3% );
+    transition: all 0.3s ease;
+    max-width: 50vh;
+    padding: 2vh 4vw;
+    border-radius: 10em;
+    border: 0px;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em;
+    color:rgb(56, 56, 56);
+}
+
+.btn-interactif:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin: 8vh 0vh 4vh 0vh;
+    font-family: 'MaPolicePerso';
+    color: #165D99;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'MaPolicePerso';
+    color: #165D99;
+}
+
+p {
+    font-family: 'MaPolicePerso';
+}
+
+.themes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.theme-card {
+    border-radius: 2vh;
+    background-color:#ffffff;
+    padding: 2vh;
+    border: 0px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.theme-card:hover {
+    transform: scale(1.2);
+    transition-duration: 2s;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding: 2vh;
+    justify-items: center;
+}
+
+.about-text h2, .about-text p {
+    text-align: left;
+}
+
+.about-image img{
+    border-radius: 1vw;
+    max-width: 45vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    background-color: #3079C8;
+    font-size: 0.8em;
+    font-family: 'MaPolicePerso';
+    color:#ffffff;
+}
+
+@media (max-width: 768px) {
+    .themes-grid {
+        grid-template-columns: 1fr;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,44 @@
+/* Configuração básica para visualizarmos melhor */
+div {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/* Medida Absoluta */
+.caixa-px {
+  font-size: 32px;
+}
+
+/* Medida Relativa 
+   (Por padrão, 1rem = 16px. Logo, 2rem = 32px) */
+.caixa-rem {
+  font-size: 2rem;
+}
+
+.pai {
+  width: 300px; /* Largura fixa para o pai */
+  height: 100px;
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+.filho {
+  width: 80%; /* Ele vai ocupar 80% dos 500px do pai */
+  background-color: coral;
+  color: white;
+  text-align: center;
+}
+
+body {
+  margin: 0; /* Remove as margens padrão do navegador */
+}
+
+.banner {
+  background-color: darkblue;
+  color: white;
+  height: 50vh; /* Ocupa exatamente METADE da altura da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

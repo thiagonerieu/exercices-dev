@@ -1,0 +1,48 @@
+body {
+    background-color: #1a2634; /* Cor de fundo escura */
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container {
+    display: flex; /* Coloca sidebar e content lado a lado */
+    border: 2px solid #3e4a5a;
+    padding: 40px;
+    width: 800px;
+    gap: 50px;
+}
+
+.sidebar {
+    border-right: 2px solid #4a5d70;
+    padding-right: 40px;
+    flex: 1;
+}
+
+.content {
+    flex: 2;
+}
+
+/* Estilização das cores de destaque (laranja/coral) */
+.menu li, .section-title, .sidebar h2 {
+    color: #ff7b72; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+  }
+  
+  a {
+    color: yellowgreen;
+  }
+  
+  div:first-of-type {
+    background-color: lightgray;
+  }
+  
+  div:nth-of-type(2) {
+    text-align: right;
+  }
+  
+  div:nth-of-type(2) p {
+    font-size: 2em;
+  }

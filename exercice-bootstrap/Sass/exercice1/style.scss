@@ -1,0 +1,13 @@
+$citron: #ffff00;
+$lumiereBleu: #00ffff;
+$cyanSombre: #00cccc;
+
+.container {
+    background-color: $citron;
+    a {
+        background-color: $lumiereBleu;
+        :hover {
+            background-color: red;
+        }
+    }
+}

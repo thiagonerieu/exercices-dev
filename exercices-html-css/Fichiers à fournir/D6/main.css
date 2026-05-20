@@ -1,0 +1,32 @@
+.dice{
+    border: 2px red solid;
+    border-radius: 15px;
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 1px red solid;
+    background-color: red;
+    border-radius: 10px;
+    ;
+}
+
+div {
+   display: flex;
+   flex-direction: column;
+}
+
+/*
+ 
+    
+    
+
+*/

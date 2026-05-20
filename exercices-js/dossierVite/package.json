@@ -1,0 +1,21 @@
+{
+  "name": "dossier-vide",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "eslint": "^10.3.0",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "bootstrap": "^5.3.8",
+    "daisyui": "^5.5.19",
+    "tailwindcss": "^4.3.0"
+  }
+}

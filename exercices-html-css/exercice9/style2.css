@@ -1,0 +1,14 @@
+body {
+    background-color:blueviolet;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 3em;
+}
+
+div {
+    height: 150px;
+    width: 300px;
+    background-color: rgb(63, 127, 184);
+    box-shadow: -7px -7px 20px #ffffff, 7px 7px 20px #000000;
+}

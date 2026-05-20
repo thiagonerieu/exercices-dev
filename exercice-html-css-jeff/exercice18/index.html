@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 18</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Spiderman: Brand New Day</h1>       
+    </header>
+    <main id="main">
+        <article id="video">
+            <h2>Poster Spiderman</h2>
+            <video controls height="320" poster="miniature/miniature_spiderman.png">
+                <source src="video/spiderman.mp4" type="video/mp4">
+                <source src="video/spiderman.webm" type="video/webm">
+                Votre navigateur ne supporte pas la vidéo HTML5.
+            </video>
+        </article>
+        <article id="stream">
+            <h2>Bande-Annonce</h2>
+            <iframe width="560" height="320" src="https://www.youtube-nocookie.com/embed/gvw6SDEToUQ?si=JRiMMKxV4F0kB5lE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+        <article id="audio">
+            <h2>Petit Audio</h2>
+                <div id="playerAudio">
+                    <audio controls>
+                        <source src="audio/people.mp3" type:"audio/mp3">
+                        <source src="audio/people.ogg" type:"audio/ogg">
+                        Votre navigateur ne supporte pas l'audio HTML5.
+                    </audio>
+                    <figcaption>Un enregistrement d'ambiance avec des voix de personnes en arrière-plan.</figcaption>
+                </div>
+        </article>
+    </main>
+    <footer>        
+    </footer>
+</body>
+</html>

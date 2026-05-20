@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #9370DB;
+}
+
+p {
+    background-color: #D3D3D3;
+    border: solid #5ED15E;
+}
+
+p:first-of-type {
+    height: 100px;
+    padding: 20px;
+    margin: 0;
+}
+
+p:nth-of-type(2) {
+    width: 50%;
+    padding: 1.2em;
+    margin: 20px 5px;
+}
+
+p:last-of-type {
+    height: 200px;
+    width: 200px;
+    padding: -30px;
+    margin: auto;
+}

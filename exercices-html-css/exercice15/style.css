@@ -1,0 +1,47 @@
+html {
+    background-color: #DBE5E9;
+}
+
+header img {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+}
+
+main img {
+    display: block;
+    border: solid #929DB1 2px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #EF233C;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    color: #2B2D42;
+    font-weight: bold;
+    text-decoration: underline dashed;
+}
+
+p {
+    color: #2B2D42;
+}
+
+span {
+    color: #EF233C;
+}
+#menuHeader {
+    text-align: center;
+}
+
+section, article {
+    border: solid 2px #2B2D42;
+}
+
+#menuFooter {
+    text-align: right;
+}

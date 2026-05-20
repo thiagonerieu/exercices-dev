@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carte de Visite — Élias Moreau</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- Gold divider line -->
+    <div class="card__divider"></div>
+
+    <!-- ═══ LEFT PANEL ═══════════════════════════════════════════════════════ -->
+    <div class="panel-left">
+
+      <!-- Logo / Identity visuelle -->
+      <div class="logo-block">
+        <div class="logo-block__icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Lens circle outer -->
+            <circle cx="24" cy="24" r="22" stroke="#C9A84C" stroke-width="1"/>
+            <!-- Lens aperture blades -->
+            <path d="M24 6 L26 18 L24 20 L22 18 Z" fill="#C9A84C" opacity="0.5"/>
+            <path d="M42 24 L30 22 L28 24 L30 26 Z" fill="#C9A84C" opacity="0.5"/>
+            <path d="M24 42 L22 30 L24 28 L26 30 Z" fill="#C9A84C" opacity="0.5"/>
+            <path d="M6 24 L18 26 L20 24 L18 22 Z" fill="#C9A84C" opacity="0.5"/>
+            <!-- Inner lens -->
+            <circle cx="24" cy="24" r="9" stroke="#C9A84C" stroke-width="1.2"/>
+            <circle cx="24" cy="24" r="4" fill="#C9A84C" opacity="0.25"/>
+            <circle cx="24" cy="24" r="2" fill="#C9A84C" opacity="0.7"/>
+            <!-- Highlight -->
+            <circle cx="27" cy="21" r="1" fill="#E8C96A" opacity="0.8"/>
+          </svg>
+        </div>
+        <span class="logo-block__label">Production Indépendante</span>
+      </div>
+
+      <!-- Nom & Titre -->
+      <div class="identity">
+        <h1 class="identity__name">
+          Élias
+          <span>Moreau</span>
+        </h1>
+        <p class="identity__title">Réalisateur &amp; Scénariste</p>
+        <div class="identity__line"></div>
+      </div>
+
+      <!-- Slogan -->
+      <div class="slogan">
+        <p class="slogan__text">
+          «&nbsp;Chaque image est un mensonge<br/>
+          qui dit la vérité.&nbsp;»
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ═══ RIGHT PANEL ══════════════════════════════════════════════════════ -->
+    <div class="panel-right">
+
+      <!-- Film strip decoration -->
+      <div class="film-strip" aria-hidden="true">
+        <div class="film-strip__frame"></div>
+        <div class="film-strip__frame"></div>
+        <div class="film-strip__frame"></div>
+        <div class="film-strip__frame"></div>
+        <div class="film-strip__frame"></div>
+        <div class="film-strip__frame"></div>
+        <div class="film-strip__frame"></div>
+        <div class="film-strip__frame"></div>
+      </div>
+
+      <!-- Contact details -->
+      <div class="contacts">
+
+        <div class="contacts__item">
+          <div class="contacts__icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 4.5C2 3.67 2.67 3 3.5 3h9C13.33 3 14 3.67 14 4.5v7c0 .83-.67 1.5-1.5 1.5h-9C2.67 13 2 12.33 2 11.5v-7z" stroke="currentColor" stroke-width="1.1"/>
+              <path d="M2 5l6 4.5L14 5" stroke="currentColor" stroke-width="1.1"/>
+            </svg>
+          </div>
+          <div class="contacts__detail">
+            <span class="contacts__label">Email</span>
+            <span class="contacts__value">elias.moreau@obscura-films.fr</span>
+          </div>
+        </div>
+
+        <div class="contacts__item">
+          <div class="contacts__icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 10.7c-.1-.1-1.4-.9-1.7-1-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.1.2-.3.2-.6.1C7.6 10.4 6 9 5.1 7.5c-.1-.3 0-.5.1-.6l.5-.6c.1-.2.2-.4.1-.6l-.9-2C4.8 3.5 4.6 3.5 4.4 3.5H3.8C3.5 3.5 3 3.7 2.7 4 2.1 4.6 2 5.4 2 6c0 1.7.9 3.3 2.1 4.5C5.3 11.7 7 12.9 9 13.3c.5.1 1 .1 1.5 0 .6-.1 1.1-.5 1.5-.9.3-.4.4-.8.3-1.1-.1-.2-.3-.3-.3-.6z" stroke="currentColor" stroke-width="1.1"/>
+            </svg>
+          </div>
+          <div class="contacts__detail">
+            <span class="contacts__label">Téléphone</span>
+            <span class="contacts__value">+33 (0)6 14 27 83 50</span>
+          </div>
+        </div>
+
+        <div class="contacts__item">
+          <div class="contacts__icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 1.5A4.5 4.5 0 0 1 12.5 6c0 3-4.5 8.5-4.5 8.5S3.5 9 3.5 6A4.5 4.5 0 0 1 8 1.5z" stroke="currentColor" stroke-width="1.1"/>
+              <circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.1"/>
+            </svg>
+          </div>
+          <div class="contacts__detail">
+            <span class="contacts__label">Adresse</span>
+            <span class="contacts__value">12 Rue du Faubourg Saint-Antoine<br/>75011 Paris, France</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social networks -->
+      <div class="socials">
+        <span class="socials__label">Réseaux</span>
+        <div class="socials__links">
+
+          <a href="#" class="socials__item">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="12" height="12" rx="3" stroke="currentColor" stroke-width="1.1"/>
+              <circle cx="8" cy="8" r="2.5" stroke="currentColor" stroke-width="1.1"/>
+              <circle cx="11.2" cy="4.8" r=".6" fill="currentColor"/>
+            </svg>
+            @elias.moreau
+          </a>
+
+          <a href="#" class="socials__item">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2.5h4l2.5 3.5L11 2.5h3L10.5 7.5l4 6h-4L8 10l-2.5 3.5H2l4-5.5L2 2.5z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            </svg>
+            @EliasMoreau
+          </a>
+
+          <a href="#" class="socials__item">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.1"/>
+              <path d="M5 8v3M8 5v6M11 7v4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+            </svg>
+            Élias Moreau
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

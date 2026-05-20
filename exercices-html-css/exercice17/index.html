@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 17</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">        
+    </header>
+    <main>
+        <form method="post" action="maito:thiagonerieu@gmail.com">
+            <h1>Connexion</h1>
+            <div id="pseudo">
+                <label for="pseudo">Pseudo:</label>
+                <input  name="pseudo" id="pseudo" type="text" minlength="2" maxlength="20" placeholder="Mon pseudo">
+            </div>
+            <div id="motDePasse">
+            <label for="motDePasse">Mot de passe: </label>
+            <input  name="password" id="password" type="password" minlength="8" maxlength="30" placeholder="Mon mot de passe"></div>
+            <div id="lineSouvenir"><input type="checkbox" id="souvenir" name="souvenir" checked><label id="msgsouvenir">Se souvenir de moi</label></div>
+            <div><button id="buttonEnvoyer" type="button">Connexion</button><button id="buttonRetour" type="reset">Retour</button></div>
+        </form>
+    </main>
+    <footer>        
+    </footer>
+</body>
+</html>

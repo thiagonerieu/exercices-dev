@@ -1,0 +1,72 @@
+// ── 1. VARIÁVEIS ──────────────────────────────
+$cor-fundo:    #1a1a2e;
+$cor-card:     #16213e;
+$cor-destaque: #e94560;
+$cor-texto:    #eaeaea;
+$cor-sutil:    #a0a0b0;
+$raio:         16px;
+
+// ── 2. MIXIN (bloco reutilizável) ─────────────
+@mixin flex-centro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// ── 3. ESTILOS GLOBAIS ────────────────────────
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $cor-fundo;
+  font-family: 'Segoe UI', sans-serif;
+  @include flex-centro;   // ← usando o mixin
+  min-height: 100vh;
+}
+
+// ── 4. CARTÃO (com aninhamento do Sass) ───────
+.card {
+  background: $cor-card;
+  border-radius: $raio;
+  padding: 2.5rem 2rem;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  // Aninhamento: .card__avatar dentro de .card
+  &__avatar {
+    @include flex-centro;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: $cor-destaque;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.2rem;
+  }
+
+  &__name {
+    color: $cor-texto;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__role {
+    color: $cor-destaque;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  &__contacts {
+    list-style: none;
+    color: $cor-sutil;
+    font-size: 0.9rem;
+    line-height: 2;
+  }
+}

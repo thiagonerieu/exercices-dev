@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <img src="./images/rioDeJaneiro1.webp">
+        <h1>Bienvenu.e sur mon site !</h1>
+        <p>
+            <nav id="menuHeader" aria-label="Navigation principale">
+                <a href="./index.html">Accueil</a><br>
+                <a href="./blog.html">Blog</a><br>
+                <a href="./galerie.html">Galerie</a><br>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </p>
+    </header>
+    <main>
+        <form method="post" action="maito:thiagonerieu@gmail.com">
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="nom">Nom:<span>*</span></label>
+            <input  name="nom" id="nom" type="text" minlength="2" maxlength="20" placeholder="Ex: Robert" required><br>
+            <label for="email">E-mail:<span>*</span></label>
+            <input  name="email" id="email" type="email" placeholder="Ex: monMail@FAI.com" required><br>
+            <label for="commentaire">Laissez un commentaire: </label><br>
+            <textarea  name="commentaire" id="commentaire" type="text" rows="10" cols="70" placeholder="Je dépose mon avis :)"></textarea><br>
+            <input type="checkbox" id="html" name="html" checked><label>Envoyer un copie par E-mail !</label><br>
+            <button id="buttonEnvoyer" type="submit">Envoyer</button><button id="buttonReset" type="reset">Reset</button>
+        </fieldset>        
+    </form>
+    </main>
+    <footer>
+        <p>
+            <nav id="menuFooter" aria-label="Navigation secondaire">
+                <a href="">Menu 1</a><br>
+                <a href="">Menu 2</a><br>
+                <a href="">Menu 3</a><br>
+                <a href="">Menu 4</a>
+            </nav>
+        </p>
+    </footer>
+</body>
+</html>

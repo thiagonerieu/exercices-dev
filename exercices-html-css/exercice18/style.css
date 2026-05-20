@@ -1,0 +1,39 @@
+body {
+    background-color: antiquewhite;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+#video {
+    .video-main {
+    flex: 2 1 500px; /* La vidéo prend 2x plus de place, 1 pour le grow et a une base de 500px */
+    }
+}
+
+#playerAudio {
+    height:320px;
+    width: 320px;
+    align-content: center;
+}
+
+article {
+    aspect-ratio : 16 / 9;
+    background-color: white;
+    border-radius: 10px;
+    border-color: gray;
+    padding: 30px;
+    box-shadow: inset;
+    margin: 10px;
+    box-shadow: 0px 0px 2px black;
+}

@@ -1,0 +1,32 @@
+html {
+    padding: 10px;
+}
+
+header {
+    display: grid;
+}
+
+h1 {
+    display: grid;
+    justify-content: center;
+}
+
+nav {
+    display: grid;
+    margin: auto;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  gap: 2em;
+  list-style: none;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1em;
+}
+

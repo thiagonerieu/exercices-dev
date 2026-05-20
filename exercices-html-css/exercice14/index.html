@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" action="maito:thiagonerieu@gmail.com">
+        <fieldset>
+            <legend>Infos Personelles</legend>
+            <label>Prénom: </label>
+            <input name="prenom" id="prenom" placeholder="Ex: Jacques" type="text" minlength="2" maxlength="20"><br>
+            <label for="nom">Nom: </label>
+            <input  name="nom" id="nom" type="text" minlength="2" maxlength="20" placeholder="Ex: Dubois"><br>
+            <label for="email">E-mail: </label>
+            <input  name="email" id="email" type="email" placeholder="Ex: monMail@FAI.com"><br>
+            <label for="tel">Numéro: </label>
+            <input  name="tel" id="tel" type="tel" placeholder="Ex: 00.11.22.33.44"><br>
+            <label for="motDePasse">Mot de passe: </label>
+            <input  name="password" id="password" type="password" minlength="8" maxlength="30" placeholder="Ex: P@sswo4d"><br>
+            <label for="age">Age: </label>
+            <input  name="age" id="age" type="number" placeholder="Ex: 15"><br>
+            <label for="commentaire">Laissez un commentaire: </label><br>
+            <textarea  name="commentaire" id="commentaire" type="text" rows="10" cols="70" placeholder="J'adore ce que vous faites !"></textarea><br>
+            <label for="date">Date de mon commentaire: </label>
+            <input  name="date" id="date" type="date"><br>
+            <label for="photo">Ma photo: </label><input id="buttonFichier" type="file" accept=".png, .jpg, .gif, webp">Choisir un fichier</input> Aucun fichier choisi.<br>
+        </fieldset>
+        <fieldset>
+            <legend for="checkbox">Vous préferez:</legend>
+            <input type="checkbox" id="html" name="html" checked><label>Le HTML</label><br>
+            <input type="checkbox" id="css" name="css"><label>Le CSS</label><br>
+            <input type="checkbox" id="javascript" name="javascr²ipt"><label>Le Javascript</label><br>
+            <input type="checkbox" id="rienFaire" name="rienFaire"><label>Ne rien faire</label>
+        </fieldset>
+        <fieldset>
+            <legend for="radio">Vous vous levez:</legend>
+            <input type="radio" id="matin" name="radio" checked><label>Le matin</label><br>
+            <input type="radio" id="midi" name="radio"><label>Le midi</label><br>
+            <input type="radio" id="soir" name="radio"><label>Le soir</label><br>
+            <input type="radio" id="enRetard" name="radio"><label>En retard !</label>
+        </fieldset>
+        <fieldset>
+            <legend for="avis">Fin du formulaire</legend>
+            <label for="team">Vous avez assez ?</label>
+            <select>
+                <optgroup label="Team pas encore">
+                    <option value="J'en veux plus">J'en veux plus</option>
+                    <option value="C'est super !">C'est super !</option>
+                </optgroup>
+                <optgroup label="Team Oula">
+                    <option value="J'en ai marre" selected>J'en ai marre</option>
+                    <option value="Pitié !">Pitié !</option>
+                </optgroup>
+            </select><br>
+            <button id="buttonEnvoyer" type="submit">Envoyer</button><button id="buttonReset" type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>

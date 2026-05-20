@@ -1,0 +1,37 @@
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 3em;
+  }
+
+article h3 {
+    color: blue;
+    font-size: 1.8em; 
+  }
+
+p    {
+    background-color:darkgray;
+    font-size: 1.1em;
+  }
+
+strong {
+    font-weight: normal;
+    color: greenyellow;
+}
+
+em {
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 1.3em;
+    color: orange;
+}
+
+#pinkcolor {
+    background-color: pink;
+}
+
+#title2 {
+    color: green;
+    text-decoration: underline;
+    text-align: right
+}

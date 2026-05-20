@@ -1,0 +1,11 @@
+h1 {
+    text-shadow: 10px -10px 5px blueviolet
+}
+
+p:first-of-type {
+    box-shadow: 0px 0px 20px red
+}
+
+p {
+    box-shadow: -10px 10px 3px greenyellow
+}

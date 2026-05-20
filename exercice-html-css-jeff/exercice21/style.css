@@ -1,0 +1,32 @@
+div {
+    align-items: center;
+}
+
+.image-zoom {
+    width: 200px;
+    transition: transform 0.5s ease;
+}
+
+.image-zoom:hover {
+    transform: scale(1.2);
+}
+
+.boite-animee {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.boite-animee:hover {
+    animation: transform-box 3s infinite;
+}
+
+@keyframes transform-box {
+    0%   { background: blue; border-radius: 0%; transform: rotate(0deg); }
+    15%  { background: red; border-radius: 20%; transform: rotate(45deg); }
+    30%  { background: yellow; transform: scale(1.5); }
+    45%  { background: green; border-radius: 50%; }
+    60%  { background: purple; transform: rotate(180deg); }
+    80%  { background: orange; border-radius: 10%; }
+    100% { background: blue; border-radius: 0%; transform: rotate(360deg); }
+}

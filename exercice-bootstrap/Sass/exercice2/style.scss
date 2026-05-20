@@ -1,0 +1,12 @@
+@mixin lesDeuxPiedsDansLaMarge($margin-right: 10px, $margin-left: 10px, $margin-top: 10px, $margin-bottom: 10px) {
+    margin-right: $margin-right;
+    margin-left: $margin-left;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}   
+
+div {
+    @include lesDeuxPiedsDansLaMarge(10px, 30px, 30px, 10px);
+    background-color: lightblue;
+    width: 200px; height: 200px;
+}
