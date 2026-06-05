@@ -8,9 +8,37 @@
 </head>
 
 <body>
+    
+    <h1 id="mouseEscroc" style="display: none;"></h1>
+
     <label>Title</label><br>
     <input type="text">
     <script src="input-focus-blur.js"></script>
+
+<fieldset class="fieldset w-full max-w-xl">
+    <legend class="fieldset-legend">On réagit au keyup</legend>
+    <input id="input-exercice-keyup" type="text" class="input input-bordered w-full" placeholder="Type here" value="kebab" />
+    <p id="renderKeyboard"></p>
+</fieldset>
+
+<fieldset class="fieldset w-full max-w-xl">
+    <legend class="fieldset-legend">On réagit au keyup pour bloquer un button</legend>
+    <input id="input-exercice-keyup-block-button" type="text" class="input input-bordered w-full" placeholder="Type here"/>
+    <button id="button-exercice-keyup-block-button" class="btn btn-soft btn-primary">Envoyer</button>
+</fieldset>
+
+<fieldset class="fieldset w-full max-w-xl">
+    <legend class="fieldset-legend">On test setInterval (Système de compte à rebours)</legend>
+    <h2 id="timer-title" class="text-2xl font-bold text-center mb-4">TIMER</h2>
+    <button id="button-exercice-setInterval" class="btn btn-soft btn-primary">Démarrer le timer</button>
+</fieldset>  
+
+
+
+
+
+<script src="input-focus-blur.js"></script> 
+<!-- Não esquecer de linkar o script de javascript. -->
 </body>
 
 </html>
